@@ -15,7 +15,7 @@ export const profile = {
     { label: "Missions Completed", value: "12" },
     { label: "Skills & Tools Mastered", value: "15+" },
   ],
-  resumeUrl: "/cv.pdf",
+  resumeUrl: "/Nabila_Nurhusna_Yap_CV_ATS.pdf",
   contact: {
     email: "nabilanurhusnayap@gmail.com",
     linkedin: "https://linkedin.com/in/nabilayap",

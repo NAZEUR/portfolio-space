@@ -17,9 +17,13 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Cosmic Explorer | Nabila Nurhusna Yap",
   description: "Portfolio of Nabila Nurhusna Yap - Indonesia UI/UX Designer",
+  icons: {
+    icon: '/images/asset/avatar_head.webp',
+  },
 };
 
 import MusicPlayer from "@/components/ui/MusicPlayer";
+import CursorSprinkles from "@/components/ui/CursorSprinkles";
 
 export default function RootLayout({
   children,
@@ -34,6 +38,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-body bg-space-deep text-text-onspace">
         {children}
         <MusicPlayer />
+        <CursorSprinkles />
       </body>
     </html>
   );

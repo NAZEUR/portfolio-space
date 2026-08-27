@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { profile } from "@/data/profile";
 import Section from "../ui/Section";
 import Image from "next/image";
+import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -53,17 +54,17 @@ export default function Contact() {
           <div className="flex gap-4">
             {profile.contact.linkedin && (
               <a href={profile.contact.linkedin} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-space-deep flex items-center justify-center text-xl hover:bg-accent-gold hover:text-space-deep transition-all">
-                in
+                <FaLinkedinIn />
               </a>
             )}
             {profile.contact.github && (
               <a href={profile.contact.github} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-space-deep flex items-center justify-center text-xl hover:bg-accent-gold hover:text-space-deep transition-all">
-                gh
+                <FaGithub />
               </a>
             )}
             {profile.contact.instagram && (
               <a href={profile.contact.instagram} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-space-deep flex items-center justify-center text-xl hover:bg-accent-gold hover:text-space-deep transition-all">
-                ig
+                <FaInstagram />
               </a>
             )}
           </div>
