@@ -68,7 +68,7 @@ export const experience: ExperienceItem[] = [
     id: "exp-hmif-gdsc",
     role: "Public Relations Lead & UI/UX Member",
     org: "HMIF & GDSC Universitas Sriwijaya",
-    period: "2023 — 2026",
+    period: "2023 — 2024",
     description:
       "Led public relations initiatives for the Informatics Student Association (HMIF) and contributed to UI/UX case studies and application prototypes within Google Developer Student Clubs (GDSC).",
   },
