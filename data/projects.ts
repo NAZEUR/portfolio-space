@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description:
       "Official open recruitment website for the Kemitraan dan Kerja Sama (KJSM) division of GenBI Sumsel 2026.",
     stack: ["Next.js", "React", "Tailwind CSS"],
-    image: "/images/project/project-oprec-kjsm.png",
+    image: "/images/project/project-oprec-kjsm.webp",
     demoUrl: "https://kjsm-genbi-recruitment.vercel.app/",
     repoUrl: "https://github.com/NAZEUR/kjsm-genbi-recruitment",
   },
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     description:
       "A modern web application designed for seamless personal finance and budget management.",
     stack: ["React", "Tailwind CSS", "Web Dev"],
-    image: "/images/project/project-budgetbee.png",
+    image: "/images/project/project-budgetbee.webp",
     demoUrl: "https://budgetbee-pi.vercel.app/",
     repoUrl: "https://github.com/NAZEUR/budgetbee",
   },
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     description:
       "My very first personal portfolio website, marking the beginning of my journey in web development.",
     stack: ["HTML", "CSS", "JavaScript"],
-    image: "/images/project/project-portfolio-pertama.png",
+    image: "/images/project/project-portfolio-pertama.webp",
     demoUrl: "https://portofolioo-flame.vercel.app/",
     repoUrl: "https://github.com/NAZEUR/portofolio",
   },
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     description:
       "A web interface built to visualize inference results for road damage detection models (my undergraduate thesis project).",
     stack: ["Python", "Flask", "YOLO", "Computer Vision"],
-    image: "/images/project/project-skripsi.png",
+    image: "/images/project/project-skripsi.webp",
     repoUrl: "https://github.com/NAZEUR/Skripsi-Road-damage-detection",
   },
   {
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     description:
       "A UI/UX case study and high-fidelity prototype for a mobile app designed to make learning traditional scripts engaging.",
     stack: ["Figma", "User Research", "Prototyping"],
-    image: "/images/project/aksara.png",
+    image: "/images/project/aksara.webp",
     demoUrl: "https://www.behance.net/gallery/208440331/Aksara-Aplikasi-Belajar-Bahasa-UIUX-Competition",
   },
   {
@@ -158,7 +158,7 @@ export const projects: Project[] = [
     description:
       "An innovative mental health app prototype offering a user-friendly interface to monitor and improve mental well-being.",
     stack: ["Figma", "Interaction Design"],
-    image: "/images/project/serenity.png",
+    image: "/images/project/serenity.webp",
     demoUrl: "https://www.figma.com/proto/M5nXIgoRzVCHyYOla8jfKo/PROJEK-UI-UX-GDSC?page-id=1%3A4&node-id=396-1406&node-type=canvas",
   },
   {
@@ -168,7 +168,7 @@ export const projects: Project[] = [
     description:
       "A wellness and productivity design concept outlining user research, persona development, and a calming UI process.",
     stack: ["Figma", "UX Research", "Slide Deck"],
-    image: "/images/project/lively.png",
+    image: "/images/project/lively.webp",
     demoUrl: "https://docs.google.com/presentation/d/1BftMULt-j1IZvnqXvnCkaQREHT3sKRlEKFo9i86eTmA/edit",
   },
   {
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     description:
       "A UI/UX study for a scrap management app focused on harnessing artisan creativity to reduce inorganic waste.",
     stack: ["Figma", "Prototyping"],
-    image: "/images/project/selco.png",
+    image: "/images/project/selco.webp",
     demoUrl: "https://www.figma.com/proto/8o0CjaH02Lvy3LrvWy4w4P/Selco?page-id=504%3A6123&node-id=714-6344&node-type=canvas",
   },
   {
@@ -188,7 +188,7 @@ export const projects: Project[] = [
     description:
       "A 19-page digital editorial magazine highlighting technology updates and campus events, designed as the main layout editor.",
     stack: ["Canva", "Editorial Design", "Graphic Design"],
-    image: "/images/project/ema.png",
+    image: "/images/project/ema.webp",
     demoUrl: "https://drive.google.com/file/d/1YvtrxRioc-sjiV17jlSnkgfIbAUilGSa/view",
   }
 ];
