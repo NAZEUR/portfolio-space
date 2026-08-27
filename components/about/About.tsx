@@ -25,7 +25,7 @@ export default function About() {
   }, []);
 
   return (
-    <Section id="about" title="Log Perjalanan" subtitle="Catatan misi dan identitas sang penjelajah" className="bg-space-deep relative overflow-hidden">
+    <Section id="about" title="Journey Chronicle" subtitle="The origin and vision of my cosmic exploration" className="bg-space-deep relative overflow-hidden">
       
       {/* Decorative Assets */}
       <motion.div

@@ -24,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <Section id="contact" title="Kirim Sinyal" subtitle="Hubungi pusat komando untuk kolaborasi atau sekadar menyapa">
+    <Section id="contact" title="Establish Comms" subtitle="Ready to collaborate or just want to say hi? Send your message transmission.">
       
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-12 mt-12 bg-space-mid/20 rounded-[3rem] p-8 md:p-12 border border-white/5 backdrop-blur-sm relative overflow-hidden">
         
@@ -35,10 +35,10 @@ export default function Contact() {
         {/* Contact Info */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center relative z-10">
           <h3 className="text-3xl font-display font-bold text-text-onspace mb-6">
-            Mari Jelajahi <span className="text-accent-gold">Galaksi Baru</span> Bersama
+            Let's Explore <span className="text-accent-gold">New Galaxies</span> Together
           </h3>
           <p className="text-text-onspace/80 mb-8 leading-relaxed">
-            Yuk, kirim sinyal — aku akan balas secepat kecepatan cahaya bintang. Terbuka untuk diskusi proyek, kolaborasi, atau sekadar bertukar pikiran.
+            Send a signal — I will reply at the speed of starlight. Open for project discussions, collaborations, or just exchanging ideas.
           </p>
 
           <div className="flex flex-col space-y-4 mb-8">
@@ -73,29 +73,29 @@ export default function Contact() {
         <div className="w-full lg:w-1/2 relative z-10">
           <form onSubmit={handleSubmit} className="bg-space-deep/80 p-8 rounded-3xl border border-white/10 flex flex-col gap-5 shadow-2xl">
             <div className="flex flex-col gap-2">
-              <label htmlFor="name" className="text-sm font-medium text-text-onspace/80">Nama Astronot</label>
+              <label htmlFor="name" className="text-sm font-medium text-text-onspace/80">Astronaut Name</label>
               <input 
                 type="text" 
                 id="name" 
                 required
                 className="bg-space-mid/50 border border-white/10 rounded-xl p-4 text-text-onspace focus:outline-none focus:border-nebula-teal transition-colors"
-                placeholder="John Doe"
+                placeholder="Your Name"
               />
             </div>
             
             <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="text-sm font-medium text-text-onspace/80">Frekuensi Komunikasi (Email)</label>
+              <label htmlFor="email" className="text-sm font-medium text-text-onspace/80">Communication Frequency (Email)</label>
               <input 
                 type="email" 
                 id="email" 
                 required
                 className="bg-space-mid/50 border border-white/10 rounded-xl p-4 text-text-onspace focus:outline-none focus:border-nebula-teal transition-colors"
-                placeholder="john@earth.com"
+                placeholder="youremail@domain.com"
               />
             </div>
             
             <div className="flex flex-col gap-2">
-              <label htmlFor="message" className="text-sm font-medium text-text-onspace/80">Pesan / Sinyal</label>
+              <label htmlFor="message" className="text-sm font-medium text-text-onspace/80">Message / Signal</label>
               <textarea 
                 id="message" 
                 required
@@ -110,10 +110,10 @@ export default function Contact() {
               disabled={status === "loading" || status === "success"}
               className="mt-2 w-full py-4 bg-cta-cream text-text-navy-cta font-bold rounded-xl hover:bg-accent-gold transition-colors disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center h-14"
             >
-              {status === "idle" && "Kirim Sinyal"}
+              {status === "idle" && "Send Signal"}
               {status === "loading" && "Transmitting..."}
-              {status === "success" && "Sinyal Diterima! 🚀"}
-              {status === "error" && "Gagal Mengirim"}
+              {status === "success" && "Signal Received! 🚀"}
+              {status === "error" && "Failed to Send"}
             </button>
           </form>
         </div>

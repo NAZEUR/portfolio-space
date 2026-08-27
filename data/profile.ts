@@ -20,7 +20,7 @@ export const profile = {
     email: "nabilanurhusnayap@gmail.com",
     linkedin: "https://linkedin.com/in/nabilayap",
     github: "https://github.com/NAZEUR",
-    instagram: "https://instagram.com/nabila.my_",
+    instagram: "https://instagram.com/nabila.ny_",
   },
 };
-
+

@@ -21,7 +21,7 @@ export default function Footer() {
 
         <div className="flex gap-4">
           <Link href="#home" className="px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 text-sm font-medium transition-colors">
-            🚀 Kembali ke Bumi
+            🚀 Return to Earth
           </Link>
         </div>
 

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <Section id="experience" title="Jejak Perjalanan" subtitle="Lintasan karir dan pengalaman dalam menjelajah galaksi desain" className="bg-space-deep relative overflow-hidden">
+    <Section id="experience" title="Career Trajectory" subtitle="The timeline of my professional journey across the design galaxy" className="bg-space-deep relative overflow-hidden">
       
       {/* Decorative Assets */}
       <motion.div

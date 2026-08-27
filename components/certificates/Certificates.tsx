@@ -16,7 +16,7 @@ export default function Certificates() {
   );
 
   return (
-    <Section id="certificates" title="Galaksi Penghargaan" subtitle="Koleksi sertifikat, kursus, dan pencapaian selama ekspedisi" className="bg-space-deep relative overflow-hidden">
+    <Section id="certificates" title="Galaxy of Achievements" subtitle="Collection of certificates, courses, and honors throughout the expedition" className="bg-space-deep relative overflow-hidden">
       
       {/* Decorative Assets */}
       <motion.div
@@ -92,7 +92,7 @@ export default function Certificates() {
         
         {filteredCertificates.length === 0 && (
           <div className="text-center py-20 text-white/50">
-            Tidak ada sertifikat di kategori ini.
+            No certificates found in this category.
           </div>
         )}
       </div>
