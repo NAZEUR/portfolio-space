@@ -44,7 +44,7 @@ export default function Skills() {
         animate={{ y: [0, -25, 0], rotate: [0, 8, -8, 0] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
       >
-        <Image src="/assets/planet4.svg" alt="Planet Decoration" fill className="object-contain" />
+        <Image src="/assets/planet4.svg" alt="Planet Decoration" fill sizes="192px" className="object-contain" />
       </motion.div>
       
       <motion.div
@@ -52,7 +52,7 @@ export default function Skills() {
         animate={{ y: [0, -15, 0], x: [0, -10, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
       >
-        <Image src="/assets/alien6.svg" alt="Alien Decoration" fill className="object-contain" />
+        <Image src="/assets/alien6.svg" alt="Alien Decoration" fill sizes="80px" className="object-contain" />
       </motion.div>
 
       <motion.div 
@@ -60,7 +60,7 @@ export default function Skills() {
         animate={{ y: [0, 20, 0], rotate: [0, 5, -5, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
-        <Image src="/images/asset/alien2.webp" alt="Alien mascot" fill className="object-contain" />
+        <Image src="/images/asset/alien2.webp" alt="Alien mascot" fill sizes="80px" className="object-contain" />
       </motion.div>
 
       <div className="relative z-10 flex flex-col gap-16 mt-8">
@@ -88,6 +88,7 @@ export default function Skills() {
                       src={edu.logo}
                       alt={`${edu.institution} logo`}
                       fill
+                      sizes="64px"
                       className="object-contain drop-shadow-md"
                     />
                   </div>

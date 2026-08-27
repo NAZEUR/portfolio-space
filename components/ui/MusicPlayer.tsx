@@ -29,17 +29,19 @@ export default function MusicPlayer() {
         audioRef.current?.play().then(() => {
           setIsPlaying(true);
         }).catch((err) => {
-          console.warn("Autoplay still blocked:", err);
+          if (err.name !== "NotAllowedError") {
+            console.warn("Audio play failed:", err);
+          }
         });
       }
     };
 
     window.addEventListener("click", handleFirstInteraction, { once: true });
-    window.addEventListener("scroll", handleFirstInteraction, { once: true });
+    window.addEventListener("keydown", handleFirstInteraction, { once: true });
 
     return () => {
       window.removeEventListener("click", handleFirstInteraction);
-      window.removeEventListener("scroll", handleFirstInteraction);
+      window.removeEventListener("keydown", handleFirstInteraction);
     };
   }, [hasInteracted, currentTrack.src]);
 

@@ -65,6 +65,7 @@ export default function Hero() {
             src="/images/asset/backgroundbelakanghero.webp"
             alt="Deep Space Background"
             fill
+            sizes="100vw"
             priority
             className="object-cover"
           />
@@ -77,6 +78,7 @@ export default function Hero() {
             src="/images/asset/backgroundlayer1hero.webp"
             alt="Space Nebula Layer 1"
             fill
+            sizes="100vw"
             priority
             className="object-cover"
           />
@@ -89,6 +91,7 @@ export default function Hero() {
             src="/images/asset/backgroundlayer2hero.webp"
             alt="Space Mountains Layer 2"
             fill
+            sizes="100vw"
             priority
             className="object-cover object-bottom"
           />
@@ -109,7 +112,7 @@ export default function Hero() {
           ease: "easeInOut",
         }}
       >
-        <Image src="/images/asset/ufo.webp" alt="UFO" fill className="object-contain" />
+        <Image src="/images/asset/ufo.webp" alt="UFO" fill sizes="(max-width: 768px) 100px, 150px" priority className="object-contain" />
       </motion.div>
 
       <motion.div
@@ -125,7 +128,7 @@ export default function Hero() {
           delay: 2,
         }}
       >
-        <Image src="/images/asset/komet.webp" alt="Comet" fill className="object-contain" />
+        <Image src="/images/asset/komet.webp" alt="Comet" fill sizes="(max-width: 768px) 200px, 300px" className="object-contain" />
       </motion.div>
       
       {/* Small floating alien 1 */}
@@ -141,7 +144,7 @@ export default function Hero() {
           delay: 1,
         }}
       >
-        <Image src="/images/asset/alien1.webp" alt="Alien 1" fill className="object-contain" />
+        <Image src="/images/asset/alien1.webp" alt="Alien 1" fill sizes="80px" className="object-contain" />
       </motion.div>
 
       {/* Main Content Area */}
@@ -214,6 +217,7 @@ export default function Hero() {
               src="/images/asset/avatar_pose1.webp"
               alt="Nabila as Astronaut"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-contain object-right-bottom"
               priority
             />

@@ -33,7 +33,7 @@ export default function Projects() {
         animate={{ y: [0, -30, 0], rotate: [0, -10, 10, 0] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       >
-        <Image src="/assets/planet2.svg" alt="Planet Decoration" fill className="object-contain" />
+        <Image src="/assets/planet2.svg" alt="Planet Decoration" fill sizes="224px" className="object-contain" />
       </motion.div>
       
       <motion.div
@@ -41,7 +41,7 @@ export default function Projects() {
         animate={{ y: [0, -20, 0], x: [0, -10, 0], rotate: [0, 5, 0] }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
       >
-        <Image src="/assets/alien4.svg" alt="Alien Decoration" fill className="object-contain" />
+        <Image src="/assets/alien4.svg" alt="Alien Decoration" fill sizes="112px" className="object-contain" />
       </motion.div>
 
       <div className="relative z-10 mt-8">
@@ -88,6 +88,7 @@ export default function Projects() {
                       src={project.image}
                       alt={project.name}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   ) : (

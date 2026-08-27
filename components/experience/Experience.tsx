@@ -15,7 +15,7 @@ export default function Experience() {
         animate={{ y: [0, -40, 0], rotate: [0, 15, -15, 0] }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
       >
-        <Image src="/assets/planet3.svg" alt="Planet Decoration" fill className="object-contain" />
+        <Image src="/assets/planet3.svg" alt="Planet Decoration" fill sizes="256px" className="object-contain" />
       </motion.div>
       
       <motion.div
@@ -23,7 +23,7 @@ export default function Experience() {
         animate={{ y: [0, -25, 0], x: [0, 15, 0], rotate: [0, -5, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
       >
-        <Image src="/assets/alien5.svg" alt="Alien Decoration" fill className="object-contain" />
+        <Image src="/assets/alien5.svg" alt="Alien Decoration" fill sizes="128px" className="object-contain" />
       </motion.div>
 
       {/* Central orbit line */}

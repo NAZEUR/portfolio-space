@@ -33,7 +33,7 @@ export default function About() {
         animate={{ y: [0, -20, 0], rotate: [0, 5, -5, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       >
-        <Image src="/assets/planet1.svg" alt="Planet Decoration" fill className="object-contain" />
+        <Image src="/assets/planet1.svg" alt="Planet Decoration" fill sizes="160px" className="object-contain" />
       </motion.div>
       
       <motion.div
@@ -41,7 +41,7 @@ export default function About() {
         animate={{ y: [0, -15, 0], x: [0, 10, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
       >
-        <Image src="/assets/alien3.svg" alt="Alien Decoration" fill className="object-contain" />
+        <Image src="/assets/alien3.svg" alt="Alien Decoration" fill sizes="96px" className="object-contain" />
       </motion.div>
 
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-16 md:gap-8 mt-16 md:mt-28 relative z-10">
@@ -114,6 +114,7 @@ export default function About() {
               src="/images/asset/avatar_pose2.webp"
               alt="Avatar"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-contain object-bottom"
               priority
             />
