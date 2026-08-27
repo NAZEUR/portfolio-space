@@ -34,8 +34,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${baloo.variable} ${poppins.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-body bg-space-deep text-text-onspace">
+      <body 
+        className="min-h-full flex flex-col font-body bg-space-deep text-text-onspace"
+        suppressHydrationWarning
+      >
         {children}
         <MusicPlayer />
         <CursorSprinkles />

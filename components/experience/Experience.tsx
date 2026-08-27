@@ -58,7 +58,11 @@ export default function Experience() {
               </div>
 
               {/* Content Card */}
-              <div className="w-full md:w-[45%] bg-space-mid/40 p-6 rounded-3xl border border-white/5 backdrop-blur-md hover:border-nebula-purple/50 transition-colors shadow-xl shadow-black/20">
+              <motion.div 
+                whileHover={{ y: -10, boxShadow: "0 20px 40px -10px rgba(139, 111, 217, 0.3)", borderColor: "rgba(139, 111, 217, 0.5)" }}
+                transition={{ duration: 0.3 }}
+                className="w-full md:w-[45%] bg-space-mid/40 p-6 rounded-3xl border border-white/5 backdrop-blur-md transition-colors shadow-xl shadow-black/20"
+              >
                 <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold text-accent-gold mb-3">
                   {exp.period}
                 </span>
@@ -82,7 +86,7 @@ export default function Experience() {
                     ))}
                   </ul>
                 )}
-              </div>
+              </motion.div>
             </motion.div>
           );
         })}

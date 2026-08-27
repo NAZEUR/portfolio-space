@@ -70,11 +70,16 @@ export default function Projects() {
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.4 }}
-                className="group rounded-[2rem] overflow-hidden bg-space-mid/40 border border-white/10 hover:border-accent-gold/50 transition-colors flex flex-col h-full"
+                whileHover={{ 
+                  y: -15, 
+                  boxShadow: "0 25px 50px -12px rgba(63, 191, 174, 0.25), 0 0 20px rgba(244, 201, 93, 0.15)",
+                  borderColor: "rgba(244, 201, 93, 0.5)"
+                }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+                className="group rounded-[2rem] overflow-hidden bg-space-mid/40 border border-white/10 transition-colors flex flex-col h-full"
               >
                 {/* Thumbnail */}
                 <div className="relative w-full h-48 overflow-hidden bg-space-deep flex items-center justify-center">

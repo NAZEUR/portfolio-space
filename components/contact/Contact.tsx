@@ -14,14 +14,32 @@ export default function Contact() {
     e.preventDefault();
     setStatus("loading");
     
-    // Simulate API call
-    setTimeout(() => {
-      setStatus("success");
-      (e.target as HTMLFormElement).reset();
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+
+    formData.append("access_key", "d565d4aa-d590-41c0-9187-87c41f6f5673")
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
       
-      // Reset success message after 3 seconds
+      const data = await response.json();
+      
+      if (data.success) {
+        setStatus("success");
+        form.reset();
+        setTimeout(() => setStatus("idle"), 3000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+      }
+    } catch (error) {
+      setStatus("error");
       setTimeout(() => setStatus("idle"), 3000);
-    }, 1500);
+    }
   };
 
   return (
@@ -44,10 +62,10 @@ export default function Contact() {
 
           <div className="flex flex-col space-y-4 mb-8">
             <a href={`mailto:${profile.contact.email}`} className="flex items-center gap-4 text-text-onspace/90 hover:text-accent-gold transition-colors p-4 rounded-2xl bg-space-deep/50 border border-white/5 hover:border-accent-gold/30">
-              <div className="w-12 h-12 bg-space-mid rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 shrink-0 bg-space-mid rounded-full flex items-center justify-center text-sm md:text-base">
                 ✉️
               </div>
-              <span className="font-medium">{profile.contact.email}</span>
+              <span className="font-medium text-sm md:text-base break-all">{profile.contact.email}</span>
             </a>
           </div>
 
@@ -78,6 +96,7 @@ export default function Contact() {
               <input 
                 type="text" 
                 id="name" 
+                name="name"
                 required
                 className="bg-space-mid/50 border border-white/10 rounded-xl p-4 text-text-onspace focus:outline-none focus:border-nebula-teal transition-colors"
                 placeholder="Your Name"
@@ -89,6 +108,7 @@ export default function Contact() {
               <input 
                 type="email" 
                 id="email" 
+                name="email"
                 required
                 className="bg-space-mid/50 border border-white/10 rounded-xl p-4 text-text-onspace focus:outline-none focus:border-nebula-teal transition-colors"
                 placeholder="youremail@domain.com"
@@ -99,6 +119,7 @@ export default function Contact() {
               <label htmlFor="message" className="text-sm font-medium text-text-onspace/80">Message / Signal</label>
               <textarea 
                 id="message" 
+                name="message"
                 required
                 rows={4}
                 className="bg-space-mid/50 border border-white/10 rounded-xl p-4 text-text-onspace focus:outline-none focus:border-nebula-teal transition-colors resize-none"

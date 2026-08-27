@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 import { profile } from "@/data/profile";
 
@@ -20,6 +20,34 @@ export default function Hero() {
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
   const avatarY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
+  // Mouse Parallax effects (3D Floating)
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const springConfig = { damping: 25, stiffness: 150 };
+  const smoothMouseX = useSpring(mouseX, springConfig);
+  const smoothMouseY = useSpring(mouseY, springConfig);
+
+  // Background moves slightly in opposite direction
+  const bgMouseX = useTransform(smoothMouseX, [-0.5, 0.5], ["2%", "-2%"]);
+  const bgMouseY = useTransform(smoothMouseY, [-0.5, 0.5], ["2%", "-2%"]);
+
+  // Mid layer moves slightly with the mouse
+  const layer1MouseX = useTransform(smoothMouseX, [-0.5, 0.5], ["-3%", "3%"]);
+  const layer1MouseY = useTransform(smoothMouseY, [-0.5, 0.5], ["-3%", "3%"]);
+
+  // Foreground layer moves more with the mouse (creating 3D depth)
+  const layer2MouseX = useTransform(smoothMouseX, [-0.5, 0.5], ["-6%", "6%"]);
+  const layer2MouseY = useTransform(smoothMouseY, [-0.5, 0.5], ["-6%", "6%"]);
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    // Normalize coordinates between -0.5 and 0.5 based on screen center
+    const x = (e.clientX / window.innerWidth) - 0.5;
+    const y = (e.clientY / window.innerHeight) - 0.5;
+    mouseX.set(x);
+    mouseY.set(y);
+  };
+
   // Create typing animation sequence: [role1, 2000, role2, 2000, ...]
   const typingSequence = profile.roles.flatMap(role => [role, 2000]);
 
@@ -27,37 +55,44 @@ export default function Hero() {
     <section
       id="home"
       ref={containerRef}
+      onMouseMove={handleMouseMove}
       className="relative w-full h-screen min-h-[800px] overflow-hidden flex items-center bg-space-deep"
     >
       {/* Background Layers for Parallax */}
-      <motion.div className="absolute inset-0 z-0" style={{ y: bgY }}>
-        <Image
-          src="/images/asset/backgroundbelakanghero.webp"
-          alt="Deep Space Background"
-          fill
-          priority
-          className="object-cover"
-        />
+      <motion.div className="absolute inset-0 z-0 scale-110" style={{ y: bgY }}>
+        <motion.div className="w-full h-full relative" style={{ x: bgMouseX, y: bgMouseY }}>
+          <Image
+            src="/images/asset/backgroundbelakanghero.webp"
+            alt="Deep Space Background"
+            fill
+            priority
+            className="object-cover"
+          />
+        </motion.div>
       </motion.div>
 
-      <motion.div className="absolute inset-0 z-10" style={{ y: layer1Y }}>
-        <Image
-          src="/images/asset/backgroundlayer1hero.webp"
-          alt="Space Nebula Layer 1"
-          fill
-          priority
-          className="object-cover"
-        />
+      <motion.div className="absolute inset-0 z-10 scale-110" style={{ y: layer1Y }}>
+        <motion.div className="w-full h-full relative" style={{ x: layer1MouseX, y: layer1MouseY }}>
+          <Image
+            src="/images/asset/backgroundlayer1hero.webp"
+            alt="Space Nebula Layer 1"
+            fill
+            priority
+            className="object-cover"
+          />
+        </motion.div>
       </motion.div>
 
-      <motion.div className="absolute inset-0 z-20" style={{ y: layer2Y }}>
-        <Image
-          src="/images/asset/backgroundlayer2hero.webp"
-          alt="Space Mountains Layer 2"
-          fill
-          priority
-          className="object-cover object-bottom"
-        />
+      <motion.div className="absolute inset-0 z-20 scale-110" style={{ y: layer2Y }}>
+        <motion.div className="w-full h-full relative" style={{ x: layer2MouseX, y: layer2MouseY }}>
+          <Image
+            src="/images/asset/backgroundlayer2hero.webp"
+            alt="Space Mountains Layer 2"
+            fill
+            priority
+            className="object-cover object-bottom"
+          />
+        </motion.div>
       </motion.div>
 
       {/* Floating Elements (UFO, Comet, Aliens) */}
