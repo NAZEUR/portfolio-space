@@ -4,6 +4,7 @@ export type ExperienceItem = {
   org: string;
   period: string;
   description: string;
+  achievements?: string[];
 };
 
 export const experience: ExperienceItem[] = [

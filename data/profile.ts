@@ -1,18 +1,19 @@
 export const profile = {
   name: "Nabila Nurhusna Yap",
   roles: [
-    "UI/UX Specialist",
-    "Full-Stack Developer", 
-    "AI & Computer Vision Enthusiast"
+    "Indonesia UI/UX Designer",
+    "Frontend & Fullstack Engineer",
+    "AI & Computer Vision Enthusiast",
+    "Mobile Developer"
   ],
   tagline:
-    "Every line of code is a coordinate charting the course to the next star system.",
+    "Nihil in vita timendum est.",
   aboutParagraph:
-    "I am a developer and designer who thrives on building digital products from the ground up—from conceptualizing intuitive user experiences and crafting pristine interfaces, to writing the robust code that brings them to life. Recently, I've been diving deep into Artificial Intelligence to build smarter, more adaptive systems. I firmly believe that exceptional design and clean architecture are two sides of the same coin.",
+    "I am a versatile developer and designer who thrives on building digital products from the ground up—from conceptualizing intuitive user experiences as a UI/UX Designer, to writing robust code as a Fullstack & Mobile Engineer. Recently, I've been diving deep into Artificial Intelligence and Computer Vision. I firmly believe that exceptional design and solid architecture are the keys to engaging digital experiences.",
   stats: [
     { label: "Years of Exploration", value: "3+" },
     { label: "Missions Completed", value: "12" },
-    { label: "Technologies Mastered", value: "12+" },
+    { label: "Skills & Tools Mastered", value: "15+" },
   ],
   resumeUrl: "/cv.pdf",
   contact: {
@@ -22,3 +23,4 @@ export const profile = {
     instagram: "https://instagram.com/nabila.my_",
   },
 };
+

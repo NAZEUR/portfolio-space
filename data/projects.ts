@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description:
       "Official open recruitment website for the Kemitraan dan Kerja Sama (KJSM) division of GenBI Sumsel 2026.",
     stack: ["Next.js", "React", "Tailwind CSS"],
-    image: "/images/projects/genbi.jpg",
+    image: "/images/project/project-oprec-kjsm.png",
     demoUrl: "https://kjsm-genbi-recruitment.vercel.app/",
     repoUrl: "https://github.com/NAZEUR/kjsm-genbi-recruitment",
   },
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     description:
       "A modern web application designed for seamless personal finance and budget management.",
     stack: ["React", "Tailwind CSS", "Web Dev"],
-    image: "/images/projects/budgetbee.jpg",
+    image: "/images/project/project-budgetbee.png",
     demoUrl: "https://budgetbee-pi.vercel.app/",
     repoUrl: "https://github.com/NAZEUR/budgetbee",
   },
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description:
       "A clean, nature-inspired landing page promoting wholesome, additive-free snacks made from sustainable ingredients.",
     stack: ["HTML/CSS", "UI Design"],
-    image: "/images/projects/lotus.jpg",
+    image: "",
     repoUrl: "https://github.com/NAZEUR/lotus",
   },
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     description:
       "A comprehensive UI/UX overhaul and frontend redesign for the Goevent platform to enhance user experience.",
     stack: ["Frontend", "UI/UX"],
-    image: "/images/projects/goevent.jpg",
+    image: "",
     repoUrl: "https://github.com/Fakhriirawann/goevent/tree/feature/ui-redesign",
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     description:
       "My very first personal portfolio website, marking the beginning of my journey in web development.",
     stack: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/portfolio-v1.jpg",
+    image: "/images/project/project-portfolio-pertama.png",
     demoUrl: "https://portofolioo-flame.vercel.app/",
     repoUrl: "https://github.com/NAZEUR/portofolio",
   },
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     description:
       "A web interface built to visualize inference results for road damage detection models (my undergraduate thesis project).",
     stack: ["Python", "Flask", "YOLO", "Computer Vision"],
-    image: "/images/projects/rdd-web.jpg",
+    image: "/images/project/project-skripsi.png",
     repoUrl: "https://github.com/NAZEUR/Skripsi-Road-damage-detection",
   },
   {
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     description:
       "An Android app developed during Bangkit Academy integrating Google ML Kit for real-time text recognition via camera.",
     stack: ["Kotlin", "Android", "ML Kit"],
-    image: "/images/projects/mlkit.jpg",
+    image: "",
     repoUrl: "https://github.com/NAZEUR/MyCamera-Starter",
   },
 
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     description:
       "My final capstone project at Bangkit Academy, aimed at preserving and promoting Indonesian cultural heritage.",
     stack: ["Kotlin", "Android Studio", "Firebase"],
-    image: "/images/projects/budayakita.jpg",
+    image: "",
     repoUrl: "https://github.com/Bayhaqieee/BudayaKita",
   },
   {
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     description:
       "A local note-taking Android application utilizing the Room database for robust and persistent offline storage.",
     stack: ["Kotlin", "Room DB", "Android"],
-    image: "/images/projects/room-notes.jpg",
+    image: "",
     repoUrl: "https://github.com/NAZEUR/My-Notes-App",
   },
   {
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     description:
       "An Android application utilizing Custom Views to manually mark and annotate objects, built during Bangkit Academy.",
     stack: ["Kotlin", "Android Views"],
-    image: "/images/projects/custom-view.jpg",
+    image: "",
     repoUrl: "https://github.com/NAZEUR/MyCamera",
   },
   {
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     description:
       "An Android utility app implementing Broadcast Receivers to capture and respond to incoming SMS events.",
     stack: ["Kotlin", "Android SDK"],
-    image: "/images/projects/broadcast.jpg",
+    image: "",
     repoUrl: "https://github.com/NAZEUR/MyBroadcastReceiver",
   },
   {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     description:
       "A foundational Flutter application exploring cross-platform mobile UI components and navigation.",
     stack: ["Flutter", "Dart"],
-    image: "/images/projects/gomoon.jpg",
+    image: "",
     repoUrl: "https://github.com/NAZEUR/go_moon",
   },
 
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     description:
       "A UI/UX case study and high-fidelity prototype for a mobile app designed to make learning traditional scripts engaging.",
     stack: ["Figma", "User Research", "Prototyping"],
-    image: "/images/projects/aksara.jpg",
+    image: "/images/project/aksara.png",
     demoUrl: "https://www.behance.net/gallery/208440331/Aksara-Aplikasi-Belajar-Bahasa-UIUX-Competition",
   },
   {
@@ -158,7 +158,7 @@ export const projects: Project[] = [
     description:
       "An innovative mental health app prototype offering a user-friendly interface to monitor and improve mental well-being.",
     stack: ["Figma", "Interaction Design"],
-    image: "/images/projects/serenity.jpg",
+    image: "/images/project/serenity.png",
     demoUrl: "https://www.figma.com/proto/M5nXIgoRzVCHyYOla8jfKo/PROJEK-UI-UX-GDSC?page-id=1%3A4&node-id=396-1406&node-type=canvas",
   },
   {
@@ -168,7 +168,7 @@ export const projects: Project[] = [
     description:
       "A wellness and productivity design concept outlining user research, persona development, and a calming UI process.",
     stack: ["Figma", "UX Research", "Slide Deck"],
-    image: "/images/projects/lively.jpg",
+    image: "/images/project/lively.png",
     demoUrl: "https://docs.google.com/presentation/d/1BftMULt-j1IZvnqXvnCkaQREHT3sKRlEKFo9i86eTmA/edit",
   },
   {
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     description:
       "A UI/UX study for a scrap management app focused on harnessing artisan creativity to reduce inorganic waste.",
     stack: ["Figma", "Prototyping"],
-    image: "/images/projects/selco.jpg",
+    image: "/images/project/selco.png",
     demoUrl: "https://www.figma.com/proto/8o0CjaH02Lvy3LrvWy4w4P/Selco?page-id=504%3A6123&node-id=714-6344&node-type=canvas",
   },
   {
@@ -188,7 +188,7 @@ export const projects: Project[] = [
     description:
       "A 19-page digital editorial magazine highlighting technology updates and campus events, designed as the main layout editor.",
     stack: ["Canva", "Editorial Design", "Graphic Design"],
-    image: "/images/projects/magazine.jpg",
+    image: "/images/project/ema.png",
     demoUrl: "https://drive.google.com/file/d/1YvtrxRioc-sjiV17jlSnkgfIbAUilGSa/view",
   }
 ];
