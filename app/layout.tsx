@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   description: "Portfolio of Nabila Nurhusna Yap - Indonesia UI/UX Designer",
 };
 
+import MusicPlayer from "@/components/ui/MusicPlayer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,6 +33,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-body bg-space-deep text-text-onspace">
         {children}
+        <MusicPlayer />
       </body>
     </html>
   );
