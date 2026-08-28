@@ -79,7 +79,7 @@ export default function Projects() {
                   borderColor: "rgba(244, 201, 93, 0.5)"
                 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="group rounded-[2rem] overflow-hidden bg-space-mid/40 border border-white/10 transition-colors flex flex-col h-full"
+                className="group rounded-[2rem] overflow-hidden bg-space-mid/40 border border-[rgba(255,255,255,0.1)] transition-colors flex flex-col h-full"
               >
                 {/* Thumbnail */}
                 <div className="relative w-full h-48 overflow-hidden bg-space-deep flex items-center justify-center">
