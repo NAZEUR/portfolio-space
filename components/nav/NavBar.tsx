@@ -69,7 +69,7 @@ export default function NavBar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className={`fixed top-0 left-0 right-0 z-[60] transition-colors duration-300 ${
-          scrolled ? "bg-space-deep/90 backdrop-blur-md shadow-lg border-b border-white/5" : "bg-transparent"
+          scrolled ? "bg-space-deep/90 backdrop-blur-md shadow-lg border-b border-[rgba(255,255,255,0.05)]" : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">

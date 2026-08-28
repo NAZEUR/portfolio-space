@@ -128,7 +128,7 @@ export default function Hero() {
           delay: 2,
         }}
       >
-        <Image src="/images/asset/komet.webp" alt="Comet" fill sizes="(max-width: 768px) 200px, 300px" className="object-contain" />
+        <Image src="/images/asset/komet.webp" alt="Comet" fill sizes="(max-width: 768px) 200px, 300px" className="object-contain" priority />
       </motion.div>
       
       {/* Small floating alien 1 */}
