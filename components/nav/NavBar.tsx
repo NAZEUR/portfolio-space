@@ -78,13 +78,13 @@ export default function NavBar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <ul className="hidden lg:flex space-x-1 bg-space-mid/50 rounded-full px-2 py-1 backdrop-blur-sm border border-nebula-purple/30">
+          <ul className="hidden lg:flex space-x-1 bg-space-mid/50 rounded-full p-1 backdrop-blur-sm border border-nebula-purple/30">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
                   onClick={() => setActive(link.name)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  className={`block px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                     active === link.name
                       ? "bg-nebula-purple text-text-onspace shadow-md"
                       : "text-text-onspace/80 hover:text-text-onspace hover:bg-space-deep/50"
