@@ -152,9 +152,6 @@ export default function Hero() {
         <motion.div 
           className="w-full md:w-1/2 flex flex-col items-start text-left"
           style={{ y: textY }}
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
         >
           <p className="text-accent-gold font-medium mb-4 tracking-wider uppercase text-sm md:text-base">
             {profile.tagline}
