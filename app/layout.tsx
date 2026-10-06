@@ -22,8 +22,10 @@ export const metadata: Metadata = {
   },
 };
 
-import MusicPlayer from "@/components/ui/MusicPlayer";
-import CursorSprinkles from "@/components/ui/CursorSprinkles";
+import dynamic from "next/dynamic";
+
+const MusicPlayer = dynamic(() => import("@/components/ui/MusicPlayer"));
+const CursorSprinkles = dynamic(() => import("@/components/ui/CursorSprinkles"));
 
 export default function RootLayout({
   children,

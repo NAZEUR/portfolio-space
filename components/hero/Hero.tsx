@@ -79,7 +79,6 @@ export default function Hero() {
             alt="Space Nebula Layer 1"
             fill
             sizes="100vw"
-            priority
             className="object-cover"
           />
         </motion.div>
@@ -92,7 +91,6 @@ export default function Hero() {
             alt="Space Mountains Layer 2"
             fill
             sizes="100vw"
-            priority
             className="object-cover object-bottom"
           />
         </motion.div>
@@ -112,7 +110,7 @@ export default function Hero() {
           ease: "easeInOut",
         }}
       >
-        <Image src="/images/asset/ufo.webp" alt="UFO" fill sizes="(max-width: 768px) 100px, 150px" priority className="object-contain" />
+        <Image src="/images/asset/ufo.webp" alt="UFO" fill sizes="(max-width: 768px) 100px, 150px" className="object-contain" />
       </motion.div>
 
       <motion.div
@@ -128,7 +126,7 @@ export default function Hero() {
           delay: 2,
         }}
       >
-        <Image src="/images/asset/komet.webp" alt="Comet" fill sizes="(max-width: 768px) 200px, 300px" className="object-contain" priority />
+        <Image src="/images/asset/komet.webp" alt="Comet" fill sizes="(max-width: 768px) 200px, 300px" className="object-contain" />
       </motion.div>
       
       {/* Small floating alien 1 */}

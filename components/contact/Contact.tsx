@@ -97,6 +97,7 @@ export default function Contact() {
                 type="text" 
                 id="name" 
                 name="name"
+                autoComplete="name"
                 required
                 className="bg-space-mid/50 border border-white/10 rounded-xl p-4 text-text-onspace focus:outline-none focus:border-nebula-teal transition-colors"
                 placeholder="Your Name"
@@ -109,6 +110,7 @@ export default function Contact() {
                 type="email" 
                 id="email" 
                 name="email"
+                autoComplete="email"
                 required
                 className="bg-space-mid/50 border border-white/10 rounded-xl p-4 text-text-onspace focus:outline-none focus:border-nebula-teal transition-colors"
                 placeholder="youremail@domain.com"
@@ -123,7 +125,7 @@ export default function Contact() {
                 required
                 rows={4}
                 className="bg-space-mid/50 border border-white/10 rounded-xl p-4 text-text-onspace focus:outline-none focus:border-nebula-teal transition-colors resize-none"
-                placeholder="Houston, we have a project..."
+                placeholder="Hai Nabila, we have a project..."
               />
             </div>
             
