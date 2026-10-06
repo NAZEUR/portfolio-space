@@ -64,10 +64,7 @@ export default function NavBar() {
 
   return (
     <>
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
+      <nav
         className={`fixed top-0 left-0 right-0 z-[60] transition-colors duration-300 ${
           scrolled ? "bg-space-deep/90 backdrop-blur-md shadow-lg border-b border-[rgba(255,255,255,0.05)]" : "bg-transparent"
         }`}
@@ -111,7 +108,7 @@ export default function NavBar() {
             {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
         </div>
-      </motion.nav>
+      </nav>
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
